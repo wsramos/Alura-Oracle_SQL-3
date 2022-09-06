@@ -1,0 +1,13 @@
+/*
+AUTOR: William Sampaio Ramos
+DATA: 05/09/2022
+DESCRIÇÃO: Aumenta 1 ano na idade dos dependentes
+*/
+
+-- DO
+UPDATE TAB_DEPENDENTE SET IDADE = IDADE + 1;
+COMMIT;
+
+-- UNDO
+UPDATE TAB_DEPENDENTE SET IDADE = IDADE - 1;
+COMMIT;
